@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Loading from '.Loading';
+import Loading from './loading';
 import React, { useState, useEffect } from 'react';
 
 
