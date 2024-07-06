@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import Loading from './loading';
+import Loading from './loading'; // Import the Loading component
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -19,6 +19,7 @@ const App = () => {
 function App() {
   return (
     <div className="App">
+      {isLoading ? <Loading /> : <h1>Loaded!</h1>}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
