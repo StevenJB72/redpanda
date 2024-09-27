@@ -1,29 +1,35 @@
+// Main.js
 import React from 'react';
 import './Main.css';
-import Home from'./3dimage.js';
-
-//https://github.com/StevenJB72
-//https://www.linkedin.com/in/steven-baird-b226aa290/
-//make it more like an app type design 
-//NOTES: add link to github, linkedin, and a CV
-//NOTES: add a list of projects
-//NOTES: add moving background with three.js 
-//NOTES: add a landing page with an animation on it
-//NOTES: make projects a list
+import Home from './Background'; // Assuming this renders the Spline background
 
 function Main() {
   return (
     <div className="App">
-      <h1>Steven Baird
-        Software Engineer</h1>
-      
-      <div className="nav">
+      {/* Navbar */}
+      <nav className="navbar">
+        <div className="navbar-title">
+          <span className="name">Steven J Baird</span>
+          <span className="profession">Software Engineer</span>
+        </div>
+        <ul className="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
+      {/* Spline Background */}
+      <div className="background-container">
         <Home />
       </div>
 
-
-      
+      {/* Overlay Content */}
+      <div className="content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This section can contain your information and other content displayed over the background.</p>
+      </div>
     </div>
   );
 }
