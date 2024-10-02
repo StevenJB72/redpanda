@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   }
   
   /* Navbar */
@@ -18,6 +20,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   }
   
   .navbar-title {
@@ -29,6 +33,8 @@
   .navbar-title .name {
     font-size: 1.2rem;
     font-weight: bold;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   }
   
   .navbar-title .profession {
@@ -52,8 +58,8 @@
     color: #ff6347;
   }
   
-  /* Background container for Spline */
-  .background-container {
+  /* Prevent interaction with the background container */
+.background-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +67,9 @@
     height: 100%;
     z-index: -1; /* Ensure it is behind all other content */
     overflow: hidden;
+    pointer-events: none; /* Prevent interaction */
   }
+  
   
   /* Content Overlay */
   .content {
@@ -112,3 +120,68 @@
     }
   }
   
+
+  /* Contact Card Styling */
+.contact-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Above other content */
+    text-align: center;
+  }
+  
+  .contact-card h2 {
+    margin-bottom: 15px;
+  }
+  
+  .contact-card p {
+    margin: 10px 0;
+  }
+  
+  .contact-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .contact-card a:hover {
+    color: #ff6347;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Overlay Content */
+  .content {
+    position: relative;
+    color: white;
+    padding: 20px;
+    z-index: 10;
+    margin-top: 20vh;
+    text-align: center;
+  }
+  
+  /* Background container for Spline */
+  .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
