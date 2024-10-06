@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header Styles */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh; /* Set header height to 10% of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the left and right elements */
+  background-color: #333; /* Background color */
+  color: white;
+  padding: 0 20px; /* Add padding to the sides */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Align content to the left in the header */
+.header-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start; /* Align text to the left */
+  max-width: 50%; /* Prevent the text from overflowing to the right */
+}
+
+/* Limit the size of text */
+.header-left h1 {
+  font-size: 2.5vh; /* Set responsive size based on viewport height */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+  margin: 0; /* Remove default margin */
+}
+
+.header-left h2 {
+  font-size: 2vh; /* Set responsive size based on viewport height */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0; /* Remove default margin */
+}
+
+/* Align nav content to the right in the header */
+.header-right {
+  max-width: 50%; /* Prevent the navigation from overflowing to the left */
+}
+
+.header-right ul {
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Adjust gap for better spacing */
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* Allow items to wrap if there's not enough space */
+  justify-content: flex-end; /* Align the wrapped items to the right */
+}
+
+/* Navigation links */
+.header-right a {
   color: white;
+  text-decoration: none;
+  font-size: 2vh; /* Adjust font size for responsiveness */
+  padding: 5px 8px; /* Reduce padding */
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.header-right a:hover {
+  background-color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Add padding to the body to avoid content being hidden under the fixed header */
+.App-body {
+  padding-top: 12vh; /* Adjust according to the header height */
+}
+
+/* Responsive resizing */
+@media (max-width: 600px) {
+  .App-header {
+    padding: 0 10px; /* Reduce side padding for smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-left h1 {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+
+  .header-left h2 {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .header-right a {
+    font-size: 3vw; /* Adjust font size for small screens */
+    padding: 3px 5px; /* Further reduce padding */
+  }
+
+  .header-right ul {
+    gap: 5px; /* Reduce gap between links on smaller screens */
   }
 }
