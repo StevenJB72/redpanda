@@ -1,0 +1,10 @@
+/* Contact.css */
+.contact {
+    display: flex;
+    gap: 10px; /* Space between the icons */
+}
+
+.contact-icon {
+    width: 50px; /* Adjust size to fit within the footer */
+    height: 50px;
+}
