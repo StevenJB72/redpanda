@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/redpanda/static/css/main.09842e16.css",
-    "main.js": "/redpanda/static/js/main.93d25bdd.js",
+    "main.css": "/redpanda/static/css/main.25e28284.css",
+    "main.js": "/redpanda/static/js/main.0914133f.js",
     "static/js/453.264422dd.chunk.js": "/redpanda/static/js/453.264422dd.chunk.js",
+    "static/media/Logo.webp": "/redpanda/static/media/Logo.f8d4f584ff95e8ef3e44.webp",
     "static/media/LinkedIn_icon.svg": "/redpanda/static/media/LinkedIn_icon.a236a02cbeb24525fd3bcf55fc6e41c6.svg",
     "static/media/github-mark.svg": "/redpanda/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "index.html": "/redpanda/index.html",
-    "main.09842e16.css.map": "/redpanda/static/css/main.09842e16.css.map",
-    "main.93d25bdd.js.map": "/redpanda/static/js/main.93d25bdd.js.map",
+    "main.25e28284.css.map": "/redpanda/static/css/main.25e28284.css.map",
+    "main.0914133f.js.map": "/redpanda/static/js/main.0914133f.js.map",
     "453.264422dd.chunk.js.map": "/redpanda/static/js/453.264422dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09842e16.css",
-    "static/js/main.93d25bdd.js"
+    "static/css/main.25e28284.css",
+    "static/js/main.0914133f.js"
   ]
 }
