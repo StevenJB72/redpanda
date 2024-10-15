@@ -1,42 +1,35 @@
 import React from 'react';
 import './App.css';
-import Projects from './Projects';
 import Contact from './Contact';
+import Nav from './Nav';
+import About from './About';
+import Projects from './Projects';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <nav className="header-left">
-          <img src="" alt="Logo Here!" />
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-        </nav>
+      <header>
+        <Nav />
       </header>
-      
-      <div className="App-body">
-        <section id="home">
-          <div className='main-home'>
+
+      <main className='main'>
+
+        <section className='home'>
           <h1>Steven J Baird</h1>
-          <h2>Software Engineer</h2>
-          </div>
+          <p>Software Engineer</p>
         </section>
-        
-        <section id="projects">
+        <section className='projects'>
           <Projects />
         </section>
-
-        <section id="about">
-          {/* About section content */}
+        <section className='about'>
+          <About />
         </section>
-      </div>
+      </main>
 
-      <footer className="App-footer">
+      <footer>
         <Contact />
       </footer>
+
     </div>
   );
 }

@@ -1,12 +1,14 @@
-import React from 'react';
-import './Project.css';
+import React, { Component } from 'react';
 
-const Projects = () => {
-    return (
-        <div className="projects">
-            {/* Your content goes here */}
-        </div>
-    );
-};
+class Projects extends Component {
+    render() {
+        return (
+            <div>
+                <h1>Projects</h1>
+                <p>This is the Projects component.</p>
+            </div>
+        );
+    }
+}
 
 export default Projects;
