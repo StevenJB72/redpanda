@@ -26,9 +26,15 @@ header {
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);}
 
 footer {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    border-top: 1px solid #dee2e6;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-top: 1px solid #dee2e6;
+        display: flex;
+        justify-content: flex-end; /* Aligns content to the right */
+        align-items: center; /* Ensures content is vertically centered */
+        height: 50px; /* Adjust height as needed */
+        overflow: hidden; /* Ensures content doesn’t leak */
+        box-sizing: border-box;
 }
 
 .home, .projects, .about {
